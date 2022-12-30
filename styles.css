@@ -1,0 +1,34 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(63, 55, 62);
+}
+
+a:link {color: rgb(255, 131, 249);}  
+a:visited {color: #ff009d}  
+a:hover {color: #ff0077}  
+a:active {color: #4e0044}  
+
+.pfp {
+    border-radius: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pfpdiv {
+    display: block;
+    margin-left: auto;
+    width: 15em;
+    margin-right: auto 
+}
+
+.bio {
+    text-align: center;
+    color: white
+}
+
+.links {
+    color: white;
+}
