@@ -12,13 +12,15 @@ a:hover {color: #ff0077}
 a:active {color: #4e0044}  
 
 .footer {
-    position: fixed;
+    position: fixed !important;
     bottom: 0;
-    width: 100%;
+    width: 100% !important;
     height: 60px;   /* Height of the footer */
     background: rgb(37, 37, 37);
     color: white;
-    text-align: center;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
  }
 
 .pfp {
