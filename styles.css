@@ -57,3 +57,16 @@ a:active {color: #4e0044}
 .links {
     color: white;
 }
+
+hr.rounded {
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    background: rgba(128, 255, 0, 0);
+    border: rgba(255, 240, 245, 0);
+  border-top: 3px solid rgb(110, 110, 110);
+  border-radius: 4px;
+}
