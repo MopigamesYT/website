@@ -26,6 +26,7 @@ a:active {color: #4e0044}
     background: rgb(37, 37, 37);
     color: white;
     text-align: center !important;
+    vertical-align: middle;
     margin: 0 !important;
     padding: 0 !important;
  }
