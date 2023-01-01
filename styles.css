@@ -4,12 +4,19 @@
 
 body {
     background-color: rgb(63, 55, 62);
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 a:link {color: rgb(255, 131, 249);}  
 a:visited {color: #ff009d}  
 a:hover {color: #ff0077}  
 a:active {color: #4e0044}  
+
+.container {
+    margin: 5px !important;
+    padding: 5px !important;
+}
 
 .footer {
     position: fixed !important;
