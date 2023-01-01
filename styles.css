@@ -18,6 +18,11 @@ a:active {color: #4e0044}
     padding: 5px !important;
 }
 
+.spacer{
+    margin-bottom: 50px;
+    visibility: hidden; 
+  }
+
 .footer {
     position: fixed !important;
     bottom: 0;
