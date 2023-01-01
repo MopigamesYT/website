@@ -11,6 +11,17 @@ a:visited {color: #ff009d}
 a:hover {color: #ff0077}  
 a:active {color: #4e0044}  
 
+#footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+    background: rgb(37, 37, 37);
+    color: white;
+    text-align: center;
+ }
+
 .pfp {
     border-radius: 45px;
     margin-left: auto;
