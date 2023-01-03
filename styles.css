@@ -28,7 +28,8 @@ a:active {color: #4e0044}
     bottom: 0;
     width: 100% !important;
     height: 50px;   /* Height of the footer */
-    background: rgb(37, 37, 37);
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
     color: white;
     text-align: center !important;
     vertical-align: middle;
