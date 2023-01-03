@@ -36,6 +36,10 @@ a:active {color: #4e0044}
     padding: 0 !important;
  }
 
+.text {
+    color: white;
+}
+
 .pfp {
     border-radius: 45px;
     margin-left: auto;
