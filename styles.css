@@ -23,81 +23,6 @@ body {
 	}
 }
 
-a:link {color: rgb(255, 131, 249);}  
-a:visited {color: #ff009d}  
-a:hover {color: #ff0077}  
-a:active {color: #4e0044}  
-
-.container {
-    margin: 5px !important;
-    padding: 5px !important;
-}
-
-.spacer{
-    margin-bottom: 50px;
-    visibility: hidden; 
-  }
-
-.footer {
-    position: fixed !important;
-    bottom: 0;
-    width: 100% !important;
-    height: 50px;   /* Height of the footer */
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(10px);
-    color: white;
-    text-align: center !important;
-    vertical-align: middle;
-    margin: 0 !important;
-    padding: 0 !important;
- }
-
-.text {
-    color: white;
-}
-
-.pfp {
-    border-radius: 45px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.pfpdiv {
-    display: block;
-    margin-left: auto;
-    width: 15em;
-    margin-right: auto 
-}
-
-.bio {
-    text-align: center;
-    color: white
-}
-
-.float-child {
-    color: white;
-    margin: 0px auto;
-    text-align: center !important;
-    
-}
-
-.middle {
-    text-align: center !important;
-}
-
-hr.rounded {
-    -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-    background: rgba(128, 255, 0, 0);
-    border: rgba(255, 240, 245, 0);
-  border-top: 3px solid rgb(110, 110, 110);
-  border-radius: 4px;
-}
-
 #slider {
    margin: 0 auto;
    width: 800px;
@@ -229,4 +154,79 @@ hr.rounded {
       max-width: calc(100% - 140px);
       margin: 0 auto;
    }
+}
+
+a:link {color: rgb(255, 131, 249);}  
+a:visited {color: #ff009d}  
+a:hover {color: #ff0077}  
+a:active {color: #4e0044}  
+
+.container {
+    margin: 5px !important;
+    padding: 5px !important;
+}
+
+.spacer{
+    margin-bottom: 50px;
+    visibility: hidden; 
+  }
+
+.footer {
+    position: fixed !important;
+    bottom: 0;
+    width: 100% !important;
+    height: 50px;   /* Height of the footer */
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+    color: white;
+    text-align: center !important;
+    vertical-align: middle;
+    margin: 0 !important;
+    padding: 0 !important;
+ }
+
+.text {
+    color: white;
+}
+
+.pfp {
+    border-radius: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pfpdiv {
+    display: block;
+    margin-left: auto;
+    width: 15em;
+    margin-right: auto 
+}
+
+.bio {
+    text-align: center;
+    color: white
+}
+
+.float-child {
+    color: white;
+    margin: 0px auto;
+    text-align: center !important;
+    
+}
+
+.middle {
+    text-align: center !important;
+}
+
+hr.rounded {
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    background: rgba(128, 255, 0, 0);
+    border: rgba(255, 240, 245, 0);
+  border-top: 3px solid rgb(110, 110, 110);
+  border-radius: 4px;
 }
