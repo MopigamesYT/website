@@ -243,7 +243,7 @@ a:active {color: #4e0044}
         }
 
         input[type="checkbox"]:checked + .slider {
-            background-color: #2196F3;
+            background-color: ##ff83f9;
         }
 
         input[type="checkbox"]:checked + .slider:before {
