@@ -117,10 +117,16 @@
             <br>
             <p>twitch: <a href="https://www.twitch.tv/mopigames">Click here!</a></p>
         </div>
-    <label class="switch">
-        <input type="checkbox" id="toggleSwitch" disabled>
-        <span class="slider"></span>
-    </label>
+
+            <br>
+            <hr class="rounded">
+            <br>
+            <div class="float-child">
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
         <!--
         <br>
         <hr class="rounded">
@@ -192,15 +198,14 @@
         const fart = document.createElement("audio");
         fart.src = "https://www.myinstants.com/media/sounds/fart-with-reverb.mp3";
 
-        toggleSwitch.addEventListener("change", () => {
+        // Event listener to play the sound when clicking on the webpage
+        document.addEventListener("mousedown", () => {
             if (toggleSwitch.checked) {
-                fart.play();
-                fart.addEventListener("ended", () => {
-                    fart.remove();
+                const currentFart = fart.cloneNode();
+                currentFart.play();
+                currentFart.addEventListener("ended", () => {
+                    currentFart.remove();
                 });
-            } else {
-                fart.pause();
-                fart.currentTime = 0;
             }
         });
     </script>
