@@ -117,7 +117,10 @@
             <br>
             <p>twitch: <a href="https://www.twitch.tv/mopigames">Click here!</a></p>
         </div>
-             
+    <label class="switch">
+        <input type="checkbox" id="toggleSwitch" disabled>
+        <span class="slider"></span>
+    </label>
         <!--
         <br>
         <hr class="rounded">
@@ -184,5 +187,22 @@
     </body>
 <script src="https://cdn.jsdelivr.net/gh/froxcey/no-wei@1.0/index.js"></script>
 <script src="./oneko.js"></script>
+<script>
+        const toggleSwitch = document.getElementById("toggleSwitch");
+        const fart = document.createElement("audio");
+        fart.src = "https://www.myinstants.com/media/sounds/fart-with-reverb.mp3";
+
+        toggleSwitch.addEventListener("change", () => {
+            if (toggleSwitch.checked) {
+                fart.play();
+                fart.addEventListener("ended", () => {
+                    fart.remove();
+                });
+            } else {
+                fart.pause();
+                fart.currentTime = 0;
+            }
+        });
+    </script>
 </html>
 
