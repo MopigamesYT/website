@@ -208,67 +208,70 @@ a:active {color: #4e0044}
 }
 
 .hoverblur {
+    
   color: transparent;
-  text-shadow: 0px 0px 25px pink;
+  text-shadow: 0px 0px 20px pink;
   transition: text-shadow 0.1s linear;
+  filter: blur(8px);
   
   &:hover { 
     text-shadow: 0px 0px 0px red;
+    filter: blur(0);
   }
 }
 
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
 
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
 
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
 
-        input[type="checkbox"] {
-            display: none;
-        }
+input[type="checkbox"] {
+    display: none;
+}
 
-        input[type="checkbox"]:checked + .slider {
-            background-color: ##ff83f9;
-        }
+input[type="checkbox"]:checked + .slider {
+    background-color: #ff83f9;
+}
 
-        input[type="checkbox"]:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
-        }
+input[type="checkbox"]:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
 
-        .slider.round {
-            border-radius: 34px;
-        }
+.slider.round {
+    border-radius: 34px;
+}
 
-        .slider.round:before {
-            border-radius: 50%;
-        }
+.slider.round:before {
+    border-radius: 50%;
+}
 
 .float-child {
     color: white;
