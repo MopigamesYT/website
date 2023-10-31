@@ -190,10 +190,22 @@ a:active {color: #4e0044}
 }
 
 .pfp {
-    border-radius: 45px;
-    margin-left: auto;
-    margin-right: auto;
+   border-radius: 45px;
+   margin-left: auto;
+   margin-right: auto;
+   animation: colorFade 5s infinite;
+}
+
+@keyframes colorFade {
+  0% {
     box-shadow: 0px 0px 60px 10px rgb(255, 131, 249);
+  }
+  50% {
+    box-shadow: 0px 0px 60px 10px #ff009d;
+  }
+  100% {
+    box-shadow: 0px 0px 60px 10px rgb(255, 131, 249);
+  }
 }
 
 .pfpdiv {
