@@ -208,10 +208,8 @@ a:active {color: #4e0044}
 }
 
 .hoverblur {
-  font-size: 100px;
-  margin: 50px;
   color: transparent;
-  text-shadow: 0px 0px 25px red;
+  text-shadow: 0px 0px 25px pink;
   transition: text-shadow 0.1s linear;
   
   &:hover { 
