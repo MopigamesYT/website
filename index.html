@@ -105,7 +105,12 @@
             <a href="https://femboy.town/"><img alt="femboy.town" src="assets/femboy.gif"></a>
             <a href="http://kawaiizenbo.me:8080/"><img src="assets/kawaiizenbo.me.gif" alt="kawaiizenbo" width="88" height="31"/></a> 
             <br>
-            <a href="https://mopigames.gay/usefullinks">more useful links</a>
+            Add my button to your website!
+            <a href="https://mopigames.gay/"><img alt="me!" src="assets/mopi.jpg"></a>
+            <br>
+            <a id="copyButton">Copy Text</a>
+    <input type="text" value="<a href='https://mopigames.gay/'><img alt='mopi!' src='https://mopigames.gay/assets/mopi.jpg'></a>" id="hiddenInput" style="position: absolute; left: -9999px;">
+            
         </div>
         <br>
         <hr class="rounded">
@@ -210,6 +215,12 @@
                     currentFart.remove();
                 });
             }
+        });
+            document.getElementById("copyButton").addEventListener("click", function() {
+            var textToCopy = document.getElementById("hiddenInput");
+            textToCopy.select();
+            document.execCommand("copy");
+            alert("Text copied to clipboard: " + textToCopy.value);
         });
     </script>
 </html>
