@@ -272,6 +272,11 @@ input[type="checkbox"]:checked + .slider {
     background-color: #ff83f9;
 }
 
+#flying-image {
+    position: absolute;
+    transition: all 2s;
+}
+
 input[type="checkbox"]:checked + .slider:before {
     -webkit-transform: translateX(13px);
     -ms-transform: translateX(13px);
