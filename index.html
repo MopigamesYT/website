@@ -133,8 +133,6 @@
                     <input type="checkbox" id="toggleSwitch">
                     <span class="slider round"></span>
                 </label> ← very very mature button
-                 <button onclick="startFlying()">Weiner button</button>
-  <img id="flying-image" src="assets/weinersex.png" alt="Flying PNG" style="display: none"
             </div>
         <!--
         <br>
@@ -223,25 +221,6 @@
             document.execCommand("copy");
             alert("Text copied to clipboard: " + textToCopy.value);
         });
-        function startFlying() {
-      const image = document.getElementById('flying-image');
-      image.style.display = 'block';
-
-      // Generate random positions for the image
-      const maxWidth = window.innerWidth - image.width;
-      const maxHeight = window.innerHeight - image.height;
-
-      const randomX = Math.random() * maxWidth;
-      const randomY = Math.random() * maxHeight;
-
-      image.style.left = randomX + 'px';
-      image.style.top = randomY + 'px';
-
-      // Make the image disappear after a delay
-      setTimeout(() => {
-        image.style.display = 'none';
-      }, 2000); // Adjust the time as needed
-    }
     </script>
 </html>
 
