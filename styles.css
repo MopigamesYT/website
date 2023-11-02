@@ -189,6 +189,10 @@ a:active {color: #4e0044}
     color: white;
 }
 
+.textbgfade {
+    color: rgb(255, 131, 249);
+    animation: colorFade 5s infinite;
+}
 .pfp {
    border-radius: 45px;
    margin-left: auto;
