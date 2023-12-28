@@ -199,12 +199,15 @@ a:active {color: #4e0044}
 @keyframes colorFade {
   0% {
     box-shadow: 0px 0px 60px 10px rgb(255, 131, 249);
+    text-shadow: 0px 0px 15px rgb(255, 131, 249);
   }
   50% {
     box-shadow: 0px 0px 60px 10px #ff009d;
+    text-shadow: 0px 0px 15px #ff009d;
   }
   100% {
     box-shadow: 0px 0px 60px 10px rgb(255, 131, 249);
+    text-shadow: 0px 0px 15px rgb(255, 131, 249);
   }
 }
 
