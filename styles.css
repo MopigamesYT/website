@@ -9,6 +9,7 @@ body {
 	background: linear-gradient(-120deg, rgb(0, 0, 0), rgb(17, 17, 27), rgb(30, 30, 46),#45475a, rgb(30, 30, 46), rgb(17, 17, 27), rgb(0, 0, 0));
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
+   color: white;
 }
 
 @keyframes gradient {
@@ -183,7 +184,13 @@ a:active {color: #4e0044}
     vertical-align: middle;
     margin: 0 !important;
     padding: 0 !important;
- }
+}
+
+.menu {
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto 
+}
 
 .text {
     color: white;
@@ -195,6 +202,90 @@ a:active {color: #4e0044}
    margin-right: auto;
    animation: colorFade 5s infinite;
 }
+
+.boxes-container {
+   margin: auto;
+   text-align: center;
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   -webkit-box-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   place-items: center;
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .boxes-container {
+     grid-template-columns: repeat(1, minmax(0, 1fr));
+   }
+ }
+ 
+ @media screen and (min-width: 601px) {
+   .boxes-container {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+ }
+ 
+ @media screen and (min-width: 900px) {
+   .boxes-container {
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+   }
+ }
+ 
+
+.boxes {
+   backdrop-filter: blur(40px);
+   width: 85%;
+   max-width: 400px;
+   box-shadow: 0 0 96px rgba(255, 255, 255, 0.025), 0 0 64px rgba(255, 255, 255, 0.025), 0 0 32px rgba(255, 255, 255, 0.025);
+   border: solid 2px rgba(255, 255, 255, 0.04);
+   border-radius: 16px;
+   display: inline-block;
+   background-color: #1e1e2e9f;
+   margin: 35px;
+   padding: 10px;
+   text-align: center;
+   word-wrap: break-word;
+   transition: 0.3s;
+ }
+
+ .boxes:hover {
+   background-color: #3030419f;
+   box-shadow: 0 0 96px rgba(92, 76, 76, 0.025), 0 0 64px rgba(255, 255, 255, 0.025), 0 0 32px rgba(255, 255, 255, 0.025);
+ 
+ }
+
+ .button {
+   background-color: rgb(255, 131, 249);
+   border-radius: 8px;
+   border-style: none;
+   box-sizing: border-box;
+   color: #000000;
+   cursor: pointer;
+   display: inline-block;
+   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   height: 40px;
+   line-height: 20px;
+   list-style: none;
+   margin: 0;
+   outline: none;
+   padding: 10px 16px;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   transition: color 100ms;
+   vertical-align: baseline;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   box-shadow: 0px 0px 6px 5px rgb(255, 131, 249);
+ }
 
 @keyframes colorFade {
   0% {
