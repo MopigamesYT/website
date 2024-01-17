@@ -408,4 +408,5 @@ hr.rounded {
     border: rgba(255, 240, 245, 0);
   border-top: 3px solid rgb(110, 110, 110);
   border-radius: 4px;
+  width: 40%;
 }
