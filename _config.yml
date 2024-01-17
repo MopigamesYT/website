@@ -1,0 +1,8 @@
+title: Mopi's cute website
+email: mopigames@proton.me
+description: >- # this means to ignore newlines until "baseurl:"
+Welcome to my cute lil website! this is my about me, go check it out!! :3
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://estrogen.monster" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: MopigamesYT
+github_username:  MopigamesYT
