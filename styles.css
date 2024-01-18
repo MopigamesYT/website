@@ -173,18 +173,19 @@ a:active {color: #4e0044}
     visibility: hidden; 
   }
 
-.footer {
-    position: fixed !important;
-    bottom: 0;
-    width: 100% !important;
-    height: 50px;   /* Height of the footer */
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(10px);
-    color: white;
-    text-align: center !important;
-    vertical-align: middle;
-    margin: 0 !important;
-    padding: 0 !important;
+  .footer {
+   position: fixed !important;
+   bottom: 0;
+   width: 100% !important;
+   height: 50px;   /* Height of the footer */
+   background: rgba(0,0,0,0.5);
+   backdrop-filter: blur(10px);
+   color: white;
+   display: flex; /* Added */
+   align-items: center; /* Added */
+   justify-content: center; /* Added if you want to center the text horizontally as well */
+   margin: 0 !important;
+   padding: 0 !important;
 }
 
 .menu {
