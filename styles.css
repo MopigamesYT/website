@@ -168,6 +168,7 @@ a:active {color: #4e0044}
 .container {
     margin: 5px !important;
     padding: 5px !important;
+    word-wrap: break-word;
 }
 
 .spacer{
