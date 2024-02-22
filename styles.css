@@ -31,6 +31,14 @@ p {
 	}
 }
 
+::-moz-selection {
+   background: rgb(255, 131, 249);
+ }
+ 
+ ::selection {
+   background: rgb(255, 131, 249);
+ }
+
 #slider {
    margin: 0 auto;
    width: 800px;
