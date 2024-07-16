@@ -47,6 +47,13 @@ p {
    background: rgb(255, 131, 249);
 }
 
+#cozyCorner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust this value as needed for vertical spacing */
+}
+
 #slider {
    margin: 0 auto;
    width: 800px;
