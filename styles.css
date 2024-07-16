@@ -47,11 +47,20 @@ p {
    background: rgb(255, 131, 249);
 }
 
+.cozy-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px; /* Adjust as needed */
+}
+
 #cozyCorner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; /* Adjust this value as needed for vertical spacing */
+  display: inline-block;
+  text-align: center;
+}
+
+#cozyCorner * {
+  text-align: center;
 }
 
 #slider {
