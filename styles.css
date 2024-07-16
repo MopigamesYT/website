@@ -24,7 +24,51 @@ body {
 p {
    word-wrap: break-word;
 }
+.navbar {
+  background-color: rgba(30, 30, 46, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: rgb(255, 131, 249);
+  text-shadow: 0 0 8px rgba(255, 131, 249, 0.6);
+}
+
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar li {
+    margin: 10px 0;
+  }
+}
 @keyframes gradient {
    0% {
       background-position: 0% 50%;
