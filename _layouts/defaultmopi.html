@@ -1,31 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="icon" href="/assets/icon.webp">
-    <meta name="description" content="{{ page.description }}">
-    <!-- OpenGraph tags -->
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.description }}">
-    <meta property="og:image" content="https://estrogen.monster/assets/pfp.jpg">
-    <meta property="og:type" content="website">
-    <!-- Backward compatibility -->
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/assets/icon.webp">
+  <meta name="description" content"{{ page.description }}">
+  <meta name="image" content="https://estrogen.monster/assets/pfp.jpg">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="description" content="{{ page.description }}">
+  <meta itemprop="image" content="https://estrogen.monster/assets/pfp.jpg">
+  <meta name="og:title" content="{{ page.title }}">
+  <meta name="og:description" content="{{ page.description }}">
+  <meta name="og:image" content="https://estrogen.monster/assets/pfp.jpg">
+  <meta name="og:url" content="https://estrogen.monster">
+  <meta name="og:site_name" content="{{ page.title }}">
+  <meta name="og:locale" content="en_US">
+  <meta name="og:type" content="website">
 </head>
+
 <body>
-    <div class="container">
-        {{ content }}
-        <footer class="footer">
-            Website made with love by Mopigames :3
-        </footer>
-    </div>
-    <!-- Only keep essential scripts -->
-    <script src="/oneko.js"></script>
+  <div class="container>
+  {{ content }}
+  <div id="footer" class="footer">
+    Website made with love by Mopigames :3
+  </div>
+</div>
 </body>
+<script src="https://cdn.jsdelivr.net/gh/froxcey/no-wei@1.0/index.js"></script>
+<script src="/oneko.js"></script>
+<script>
+  const toggleSwitch = document.getElementById("toggleSwitch");
+  const fart = document.createElement("audio");
+  fart.src = "https://www.myinstants.com/media/sounds/fart-with-reverb.mp3";
+
+  // Event listener to play the sound when clicking on the webpage
+  document.addEventListener("mousedown", () => {
+    if (toggleSwitch.checked) {
+      const currentFart = fart.cloneNode();
+      currentFart.play();
+      currentFart.addEventListener("ended", () => {
+        currentFart.remove();
+      });
+    }
+  });
+  document.getElementById("copyButton").addEventListener("click", function () {
+    var textToCopy = document.getElementById("hiddenInput");
+    textToCopy.select();
+    document.execCommand("copy");
+    alert("Text copied to clipboard: " + textToCopy.value);
+  });
+</script>
+
 </html>
